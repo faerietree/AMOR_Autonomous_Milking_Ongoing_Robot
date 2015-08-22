@@ -3,7 +3,12 @@
 
 ###Indoor or outdoor (or both) mobile robot for automatic milking, feeding and herd management (among others).
 
-It can employ a simplistic robotic manipulator or the Earth worm robotic manipulator mounted ontop a single or double base roll rotatory joint.
+It can employ:
+* 1..2 <a href="https://www.youtube.com/watch?v=GawGF-8rVSY">simplistic specialized</a> or
+* 1..2 Earth worm robotic manipulators, each mounted ontop a single or double base roll rotatory joint.
+If 2 robotic arms are employed, then redundancy and operating speed (due to robotic cooperation) is increased.
+The recommended setup is to construct 2 independent, mirrored milking robots next to each other, such that both can help or replace each other.
+
 
 While the pipings and vacuum system will be built-in, an arbitrary milk container should be added.
 
