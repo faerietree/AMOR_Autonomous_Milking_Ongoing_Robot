@@ -3,18 +3,33 @@
 
 ###Indoor or outdoor (or both) mobile robot for automatic milking, feeding and herd management (among others).
 
-It can employ:
+Characteristics
+---
+###Possible manipulator configurations:
 * 1..2 <a href="https://www.youtube.com/watch?v=GawGF-8rVSY">simplistic specialized</a> or
 * 1..2 Earth worm robotic manipulators, each mounted ontop a single or double base roll rotatory joint.
-If 2 robotic arms are employed, then redundancy and operating speed (due to robotic cooperation) is increased.
-The recommended setup is to construct 2 independent, mirrored milking robots next to each other, such that both can help or replace each other.
 
+If 2 robotic arms are employed, then redundancy and operating speed (due to robotic cooperation) is increased. Yet path calculation is complicated (because next to the cow, the other manipulator is another dynamic obstacle to be collision avoided). If the simplistic specialized manipulators are used, then waiting time has to be calculated too because the reachable workspace is limited and the flexibility of the manipulator is far less than the industrial robot (earth worm).
 
+* The recommended setup is to construct 2 independent, mirrored milking robots next to each other, such that both can help or replace each other.
+
+###Milk container configurations
 While the pipings and vacuum system will be built-in, an arbitrary milk container should be added.
+Thinkable solutions may be:
+* Pipe or tube downhill to the milking chamber where the container is located.
+* Pump or suck the milk into a freely located container.
+* Add a milk container and cooling system directly to the AMOR construction. (Requires reachability of the milk truck or similar.)May conflict with the mobility of the robot as well as with the  herd management.
+* ...
 
+###Milk management
 Milk can be redirected to outlets for calves' milk and to the waste exit (waste system connected or left to nature).
 
+###Water supply
 It may harvest water from rain, a river, stream or any other water source, a water inlet for connection to the farm's water supply exists.
+
+###Energy supply
+* stand-alone (self-sustained, e.g. regenerative energy harvest) or
+* external supply (e.g. plugged or transmitted from an electric grid, emergency power supply, or similar).
 
 Process
 ---
