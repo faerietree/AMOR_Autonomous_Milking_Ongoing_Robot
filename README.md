@@ -1,10 +1,9 @@
-Autonomous milking ongoing robot
+<a href="http://wiki.opensourceecology.de/index.php/Milking_robot">Autonomous Milking &amp; Other Robot</a> (=: AMOR)
 ===
-AMOR is a planned indoor / outdoor combinated mobile robot for automatic milking.
 
-It can employ a simplistic robotic manipulator or the Earth worm robotic manipulator mounted ontop a single or double base roll ratatory joint.
+###Indoor or outdoor (or both) mobile robot for automatic milking, feeding and herd management (among others).
 
-A 3D camera determines the udder's, teats' positions.
+It can employ a simplistic robotic manipulator or the Earth worm robotic manipulator mounted ontop a single or double base roll rotatory joint.
 
 While the pipings and vacuum system will be built-in, an arbitrary milk container should be added.
 
@@ -12,10 +11,16 @@ Milk can be redirected to outlets for calves' milk and to the waste exit (waste 
 
 It may harvest water from rain, a river, stream or any other water source, a water inlet for connection to the farm's water supply exists.
 
+Process
+---
+* A 3D camera determines the udder's, teats' positions.
+* The robotic manipulator calculates the tool's teat cup grip and teat dock orientations.
 
-<a href="http://wiki.opensourceecology.de/index.php/Milking_robot">Wiki: Autonomous milking ongoing robot</a>
+* Paths are calculated:
+  1. from current tool position and orientation (:= pose) to the teat cup grip pose.
+  2. from the teat cup grip pose to the teat cup grip pose.
 
-
+<img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
 
 List of missing modules/functionality
 ---
@@ -25,7 +30,6 @@ List of missing modules/functionality
 (missing)
 
 
-<img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
 
 
 
