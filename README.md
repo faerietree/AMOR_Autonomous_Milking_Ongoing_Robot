@@ -31,8 +31,7 @@ It may harvest water from rain, a river, stream or any other water source, a wat
 * stand-alone (self-sustained, e.g. regenerative energy harvest) or
 * external supply (e.g. plugged or transmitted from an electric grid, emergency power supply, or similar).
 
-Process
----
+###Docking process
 * A 3D camera determines the udder's, teats' positions.
 * The robotic manipulator calculates the tool's teat cup grip and teat dock orientations.
 
@@ -40,6 +39,9 @@ Process
   1. from current tool position and orientation (:= pose) to the teat cup grip pose.
   2. from the teat cup grip pose to the teat cup grip pose.
 
+
+Overview schematic
+---
 <img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
 
 List of missing modules/functionality
