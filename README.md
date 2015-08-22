@@ -3,6 +3,10 @@
 
 ###Indoor or outdoor (or both) mobile robot for automatic milking, feeding and herd management (among others).
 
+Overview schematic
+---
+<img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
+
 Characteristics
 ---
 ###Possible manipulator configurations:
@@ -40,12 +44,7 @@ It may harvest water from rain, a river, stream or any other water source, a wat
   2. from the teat cup grip pose to the teat cup grip pose.
 
 
-Overview schematic
----
-<img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
 
-List of missing modules/functionality
----
 ###Milk container cleaning system
 (missing)
 ###Autonomous meadow management
