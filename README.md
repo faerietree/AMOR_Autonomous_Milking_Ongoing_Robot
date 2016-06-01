@@ -5,7 +5,7 @@
 
 Overview schematic
 ---
-<img src="AMOR_0_2_High_Level_Overview.jpg" alt=""/>
+<img src="AMOR_High_Level_Overview.jpg" alt=""/>
 
 Characteristics
 ---
