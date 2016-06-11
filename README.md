@@ -10,8 +10,9 @@ Overview schematic
 Characteristics
 ---
 ###Possible manipulator configurations:
-* 1..2 <a href="https://www.youtube.com/watch?v=GawGF-8rVSY">simplistic specialized</a> or
-* 1..2 Earth worm robotic manipulators, each mounted ontop a single or double base roll rotatory joint.
+* 1 Robotic 6 axes manipulator. 
+* 2 Robotic 6 axes manipulator. Each the watchdog of the other one respectively.
+* Animal child like: 6 axes manipulator + mobile base. (Approaching the animal to be milked in time and then even be allowed to "drink" from it will be the major issue.)
 
 If 2 robotic arms are employed, then redundancy and operating speed (due to robotic cooperation) is increased. Yet path calculation is complicated (because next to the cow, the other manipulator is another dynamic obstacle to be collision avoided). If the simplistic specialized manipulators are used, then waiting time has to be calculated too because the reachable workspace is limited and the flexibility of the manipulator is far less than the industrial robot (earth worm).
 
