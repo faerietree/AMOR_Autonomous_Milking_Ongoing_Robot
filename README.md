@@ -1,4 +1,4 @@
-<a href="http://wiki.opensourceecology.de/index.php/milker">Milker</a> (autonomous milking and other robot) 
+<a href="http://wiki.opensourceecology.de/index.php/milker">Milker</a> (autonomous milking and other robot)
 ===
 
 ###Indoor or outdoor (or both) mobile automaton for milking, feeding and herd management (among others), i.e. common task a human milker would perform.
@@ -10,7 +10,7 @@ Overview schematic
 Characteristics
 ---
 ###Possible manipulator configurations:
-* 1 Robotic 6 axes manipulator. 
+* 1 Robotic 6 axes manipulator.
 * 2 Robotic 6 axes manipulator. Each the watchdog of the other one respectively.
 * Animal child like: 6 axes manipulator + mobile base. (Approaching the animal to be milked in time and then even be allowed to "drink" from it will be the major issue.)
 
@@ -319,7 +319,7 @@ Allerdings muss man berücksichtigen, dass es sich dabei um mechanische Leistung
 
 Bleibt noch die oben erwähnte Sache mit den 4bar Druck auf der Wasserleitung, ich bin mir wie gesagt nicht ganz sicher, ob die hier wirklich zu veranschlagen wären, denn selbst wenn auf deinem Milchtank stattdessen nur eine Atmosphäre = 1bar Druck lastet und die Milch entsprechend 4 mal langsamer rausgedrückt, dann sollte sich am Gesamtergebnis doch eigentlich nichts ändern, weil der dann kleinere Volumenstrom dafür dann auch enstsprechend 4 mal länger läuft und Strom erzeugt, d.h., an der Gesamtkapazität des 10000L-Tanks würde sich nix ändern.
 
-     
+
 
 
 Re: AMOR - Automated Milking Ongoing Robot
