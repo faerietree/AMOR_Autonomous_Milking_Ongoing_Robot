@@ -1,4 +1,4 @@
-<a href="http://wiki.opensourceecology.de/index.php/milker">Milker</a> (previously 
+<a href="http://wiki.opensourceecology.de/index.php/milker">Milker</a> (autonomous milking and other robot) 
 ===
 
 ###Indoor or outdoor (or both) mobile automaton for milking, feeding and herd management (among others), i.e. common task a human milker would perform.
