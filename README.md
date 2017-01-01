@@ -5,7 +5,7 @@
 
 Overview schematic
 ---
-<img src="AMOR_High_Level_Overview.jpg" alt=""/>
+<img src="High_Level_Overview.jpg" alt=""/>
 
 Characteristics
 ---
@@ -301,7 +301,7 @@ Wenn man den Roboter nicht eingraben will, dann könnte man den Effekt vielleich
 
 Hier das Schema zum Vakuum System:
 
-<img src="AMOR_Vacuum_System.jpg" alt=""/>
+<img src="Vacuum_System.jpg" alt=""/>
 
 
 
@@ -392,7 +392,7 @@ Ich rede zu viel, hier meine Taten, Vakuum System Revision 2. Jetzt doch mit mec
 
 Jetzt muss nur noch ein passendes Ventil (engl. Valve) gefunden werden.
 
-<img src="AMOR_Vacuum_System.jpg" alt=""/>
+<img src="Vacuum_System.jpg" alt=""/>
 
 
 ### Energie durch Höhenunterschied Melkroboter Tank 

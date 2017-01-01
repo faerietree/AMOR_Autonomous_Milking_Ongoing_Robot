@@ -29,7 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:AMOR_High_Level_Overview-cache
+LIBS:High_Level_Overview-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
