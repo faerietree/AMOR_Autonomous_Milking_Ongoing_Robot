@@ -1,7 +1,7 @@
-<a href="http://wiki.opensourceecology.de/index.php/Milking_robot">Autonomous Milking &amp; Other Robot</a> (=: AMOR)
+<a href="http://wiki.opensourceecology.de/index.php/milker">Milker</a> (previously 
 ===
 
-###Indoor or outdoor (or both) mobile robot for automatic milking, feeding and herd management (among others).
+###Indoor or outdoor (or both) mobile automaton for milking, feeding and herd management (among others), i.e. common task a human milker would perform.
 
 Overview schematic
 ---
