@@ -43,6 +43,15 @@
 			<version not-before="">
 			</version>
 			-->
+			<!-- worlddevelopment.0install maintains these links: -->
+			<includes>
+				<!-- The node value is optional for not having to find
+					the path and helps with keeping track of version
+					controlled renames of files. -->
+				<file path="mechanics/manipulator.blend" as="mechanics/manipulator.blend">
+					<manifest-digest sha256="4914e13ffff4a8572ea3e65e101b70e6737aaedf51902aa335ca8acfa73d787f" sha256new=""/>
+				</file>
+			</includes>
 		</requires>
 
 		<implementation id="." version="0.1-pre">
