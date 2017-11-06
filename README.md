@@ -5,7 +5,7 @@
 
 Overview schematic
 ---
-<img src="High_Level_Overview.jpg" alt=""/>
+<img src="high_level_overview.jpg" alt=""/>
 
 Characteristics
 ---
