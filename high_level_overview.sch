@@ -1,42 +1,14 @@
 EESchema Schematic File Version 2
+LIBS:High_Level_Overview-rescue
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:High_Level_Overview-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 32
+Sheet 1 30
 Title "AMOR - System High Level Overview"
-Date "09 Jun 2016"
+Date "2017-11-06"
 Rev "4"
 Comp ""
 Comment1 ""
@@ -70,30 +42,18 @@ F1 "Feeding_System.sch" 50
 $EndSheet
 Text Notes 3750 950  0    138  ~ 0
              - Milker -\nAnimals: Cow, Milk for Calves, Goat, ...
-Text Notes 800  4000 1    99   ~ 0
-Sensors
-Text Notes 1150 6500 1    85   ~ 0
-Unix realtime control network
-Text Notes 8950 7100 0    99   ~ 0
-World Wide Webpage
-Text Notes 8450 4900 0    79   ~ 16
-Jetson TK1 desktopCUDAcode compatible\nNVIDIAUbuntu, Unity, Link to the Internet,\nServer.
-Text Notes 9600 5150 0    61   ~ 12
-Filesystem SQLite\n MySQL Database\n
-Text Notes 9050 6350 0    60   ~ 0
+Text Notes 5900 6600 0    60   ~ 0
 e.g.\nAnimal properties (transmitted activity,\nrobot walkthroughs with and without\nbeing actually milking, Milk quantity),\nMilk properties (protein, lipides, ...)\nAMOR logging,\nBackups,\nUser-created configurations of AMOR for\nswitching modes if reflashing of the\nwhole microcontroller system required.
-Text Notes 10300 6900 0    60   ~ 0
-OUTPUT\nsharing,\nstatus,\nemergency
-Text Notes 8300 6900 0    60   ~ 0
-INPUT\ncontrol command (i.e. open gate\nfor another meadow, cooling off\npower export: AMOR as Generator)
+Text Notes 6200 7000 0    60   ~ 0
+operate meadow gates\nturn cooling off
 $Sheet
 S 2400 2250 1250 500 
 U 51D7F866
 F0 "Robotic_Manipulator" 50
 F1 "Robotic_Manipulator.sch" 50
 $EndSheet
-Text Notes 800  6250 1    99   ~ 0
-Digital World
+Text Notes 300  7750 1    99   ~ 0
+digital <-
 Text Notes 3950 1150 0    60   ~ 0
 Mechanical Structure, Water Storage, Milk Storage, Energy Storage & Piping
 $Sheet
@@ -108,24 +68,18 @@ U 51D7F8B3
 F0 "Milk_Piping_And_Storage_System" 50
 F1 "Milk_Piping_And_Storage_System.sch" 50
 $EndSheet
-Text Notes 9050 950  0    139  ~ 28
-OUTPUT SIDE
-Text Notes 1100 950  0    139  ~ 28
-INPUT SIDE
 Text Notes 3050 1500 1    60   ~ 0
 Air inflow
 Text Notes 3350 1500 1    60   ~ 0
 Regulated\npressure valve
-Text Notes 3950 6050 2    60   ~ 12
-(Parallel Port PC+Realtime Kernel+Voidlinux[+Xmonad])+
 $Sheet
 S 7450 4450 750  650 
 U 51D8467C
 F0 "3D_Camera_Data_Interpretion" 50
 F1 "3D_Camera_Data_Interpretion.sch" 50
 $EndSheet
-Text Notes 800  2400 1    99   ~ 0
-Analog World
+Text Notes 300  1300 1    99   ~ 0
+-> analog
 Text Label 3850 2650 1    60   ~ 12
 milks
 Text Label 1150 2250 0    60   ~ 12
@@ -169,10 +123,8 @@ Text Notes 5850 4950 0    60   ~ 12
       ON / OFF\nGate & Feeding System\n       Signals
 Text Notes 4700 4950 0    60   ~ 12
  Robotic Manipulator\n Closed loop control\n\n
-Text Notes 1950 4550 0    60   ~ 12
+Text Notes 3000 4450 0    60   ~ 12
         Sensor Signal Preparation (HW)\n\nSensor Signal Distribution (SW, RODOS/UNIX)
-Text Notes 6800 5800 0    60   ~ 12
-       Data\nSelection & Storage
 $Sheet
 S 4050 4600 550  700 
 U 51D84CE9
@@ -195,8 +147,6 @@ F1 "Cleaning_Non-Toxic.sch" 50
 $EndSheet
 Text Notes 8150 1900 0    60   ~ 12
 Cleaning System
-Text Notes 7100 7100 0    99   ~ 0
-Touchscreen
 $Bitmap
 Pos 7800 3000
 Scale 1.000000
@@ -1145,7 +1095,7 @@ A5 57 5F B4 E5 5D 8E D8 B1 00 E2 30 B3 3B 5E 71 D7 F2 6A F8 93 20 7C 11 02 61 E4
 F0 33 68 68 A0 A5 50 60 89 5C F0 85 1D CD AD 8E 34 B5 D6 77 74 F6 04 96 F5 F4 89 35 35 61 AB E4 
 0F CC 4B 4B 22 13 DF FE CA 17 F6 27 4E 4D 5B AF 7D C5 FF C7 EF 81 0E 59 53 10 14 05 19 50 F1 05 
 FD C8 6D 3E 3A DF FA DB 0D 02 FE 60 FC 37 74 EC 52 EF 4D 77 36 67 00 00 00 00 49 45 4E 44 AE 42 
-60 82 B2 
+60 82 
 EndData
 $EndBitmap
 $Bitmap
@@ -2202,7 +2152,7 @@ FE 97 7A D9 43 36 66 78 4D F8 42 74 FC 20 41 2F A4 A6 85 77 29 A0 C1 0B 84 48 11
 CF EA 24 57 6B 7D D6 4A AE 28 23 07 9F EB 3D 64 C8 75 45 F3 27 55 FE 5D E5 DE 5A A6 51 2B A2 90 
 44 B5 9A 87 4B 92 12 61 7E EB A5 5E EA 90 21 5B 22 9B 6C FC 5D 6B 5F FE 3F A4 5C AA C4 AE 23 E8 
 28 48 3D 42 7D C2 18 F3 8A 97 7A 8D 43 7E 30 C3 6B C2 17 41 6B 8F 3E 98 C8 D6 0D F5 16 F3 67 4F 
-CC 0F 36 A0 67 C8 75 E1 FF 01 C5 B4 8E E0 F3 25 8C 03 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
+CC 0F 36 A0 67 C8 75 E1 FF 01 C5 B4 8E E0 F3 25 8C 03 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
 $Sheet
@@ -14117,56 +14067,21 @@ DB 49 3A 20 AE 26 7C B8 B0 5A 19 F1 BA 1F AC 9F 6B 75 53 32 A4 63 2F E7 F7 91 95
 B5 6F C6 FC D7 03 F4 3E AD 08 7A 0B AC 6D F0 26 4C B5 01 B6 45 C0 0C FD BD 4B 86 4E 0B 0F 9B A0 
 BE 3B 3A 3F EC D6 66 1C 7B 7A F7 BF DB FD 70 01 8D D1 1E 41 2C 34 2F 48 C6 42 8B B9 A4 F7 0E 73 
 EB 72 89 F8 16 5E 44 17 D7 16 8F F9 6F D4 BF B4 26 F9 38 E8 2D 58 58 C4 A6 2B 16 34 39 D7 DA 72 
-5E FA 2D 91 52 0A FF 07 5A 4B 38 9D 34 1A 7B 55 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
+5E FA 2D 91 52 0A FF 07 5A 4B 38 9D 34 1A 7B 55 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
 Text GLabel 2150 1450 2    60   Input ~ 0
 +12V
 Text GLabel 1100 1350 1    60   Input ~ 0
 +5V
-$Comp
-L GND #PWR?
-U 1 1 51DB6024
-P 850 6700
-F 0 "#PWR?" H 850 6700 30  0001 C CNN
-F 1 "GND" H 850 6630 30  0001 C CNN
-F 2 "" H 850 6700 60  0000 C CNN
-F 3 "" H 850 6700 60  0000 C CNN
-	1    850  6700
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 8950 4900 2050 1550
-U 51D7F9CB
-F0 "Data_Storage_Milk_Animal_Properties" 50
-F1 "Data_Storage_Milk_Animal_Properties.sch" 50
-$EndSheet
-Text Notes 1250 6600 0    60   ~ 0
-Functionality:\n- Watchdog for other control bots (check their heartbeat n to n network)\n- Control manipulator\n- Receive commands from AMOR server\n- Send input, output state, control data to AMOR server
-Text GLabel 1050 6200 0    60   Input ~ 0
-24V
-Text Notes 1750 5150 0    60   ~ 12
+Text Notes 4550 6600 0    60   ~ 12
  incoming\n states of\nsubsystems:      
 $Sheet
-S 1800 4250 2450 350 
+S 2850 4150 2450 350 
 U 574DD6ED
 F0 "State_Sensing_Signal_Preparation" 50
 F1 "State_Sensing_Signal_Preparation.sch" 50
 $EndSheet
-$Sheet
-S 6800 5500 900  450 
-U 574DD8AA
-F0 "Data_Selection_And_Storage" 50
-F1 "Data_Selection_And_Storage.sch" 50
-$EndSheet
-Text Notes 7050 6250 0    60   ~ 0
-Command
-Text Notes 5550 7100 0    99   ~ 0
-LCD Display
-Text Notes 5450 6850 0    60   ~ 0
-Essential Realtime Data
-Text Notes 7400 7000 0    60   ~ 0
-User interface
 $Sheet
 S 4050 5450 550  650 
 U 574DE337
@@ -14175,30 +14090,8 @@ F1 "Animal_milk_for_its_kids.sch" 50
 $EndSheet
 Text Notes 4100 5950 0    60   ~ 0
  Separate\n Analyze\n Milk for\nAnimal kids
-Text Notes 5800 5750 0    60   Italic 0
+Text Notes 2050 7650 0    60   Italic 0
 Option: Approach\nwhen other calves\ndrink, stop and milk.
-Text Notes 7100 6900 0    60   ~ 0
-OUTPUT\nsharing,\nstatus,\nemergency
-Text Notes 8300 7100 0    60   ~ 0
-User interface
-Wire Notes Line
-	11050 4450 11050 6650
-Wire Notes Line
-	1000 6650 1000 4450
-Wire Notes Line
-	8250 6950 8250 7100
-Wire Notes Line
-	8250 7100 11000 7100
-Wire Notes Line
-	11000 7100 11000 6950
-Wire Notes Line
-	7400 4450 7400 6650
-Wire Notes Line
-	7050 4450 7050 6650
-Wire Notes Line
-	7400 4450 11050 4450
-Wire Notes Line
-	7400 6650 11050 6650
 Wire Notes Line
 	8050 550  8050 1250
 Wire Notes Line
@@ -14211,28 +14104,6 @@ Wire Notes Line
 	2900 1050 2900 1600
 Wire Notes Line
 	3200 1050 3200 1600
-Wire Notes Line
-	11100 3350 11100 4150
-Wire Notes Line
-	11100 4150 600  4150
-Wire Notes Line
-	600  4150 600  3350
-Wire Notes Line
-	600  3350 11100 3350
-Wire Notes Line
-	11100 4400 600  4400
-Wire Notes Line
-	600  4400 600  7150
-Wire Notes Line
-	600  7150 11100 7150
-Wire Notes Line
-	11100 7150 11100 4400
-Wire Notes Line
-	600  2950 600  1000
-Wire Notes Line
-	600  1000 11100 1000
-Wire Notes Line
-	11100 1000 11100 2950
 Wire Wire Line
 	1150 1950 1150 2250
 Wire Wire Line
@@ -14277,8 +14148,6 @@ Wire Notes Line
 	2800 3200 2900 3300
 Wire Notes Line
 	2900 3300 3000 3200
-Wire Notes Line
-	11100 2950 600  2950
 Wire Notes Line
 	3100 3200 3050 3200
 Wire Notes Line
@@ -14356,40 +14225,6 @@ Wire Notes Line
 Wire Notes Line
 	10200 3000 10100 3000
 Wire Notes Line
-	11000 6950 8250 6950
-Wire Notes Line
-	10050 6650 10050 6850
-Wire Notes Line
-	10050 6850 10000 6850
-Wire Notes Line
-	10000 6850 10100 6950
-Wire Notes Line
-	10100 6950 10200 6850
-Wire Notes Line
-	10200 6850 10150 6850
-Wire Notes Line
-	10150 6850 10150 6650
-Wire Notes Line
-	8100 6950 8100 6750
-Wire Notes Line
-	8100 6750 8050 6750
-Wire Notes Line
-	8050 6750 8150 6650
-Wire Notes Line
-	8150 6650 8250 6750
-Wire Notes Line
-	8250 6750 8200 6750
-Wire Notes Line
-	8200 6750 8200 6950
-Wire Notes Line
-	8050 7100 7050 7100
-Wire Notes Line
-	7050 7100 7050 6950
-Wire Notes Line
-	7050 6950 8050 6950
-Wire Notes Line
-	8050 6950 8050 7100
-Wire Notes Line
 	4600 4100 4500 4200
 Wire Notes Line
 	4500 4200 4500 3900
@@ -14432,63 +14267,9 @@ Wire Notes Line
 Wire Notes Line
 	6450 3900 6150 3900
 Wire Notes Line
-	7100 5150 7250 5150
-Wire Notes Line
-	7250 5150 7250 5100
-Wire Notes Line
-	7250 5100 7350 5200
-Wire Notes Line
-	7350 5200 7250 5300
-Wire Notes Line
 	7250 5300 7250 5250
-Wire Notes Line
-	7250 5250 7100 5250
-Wire Notes Line
-	7100 5250 7100 5150
-Wire Notes Line
-	7100 5650 7100 5750
-Wire Notes Line
-	7100 5750 7250 5750
-Wire Notes Line
-	7250 5750 7250 5800
-Wire Notes Line
-	7250 5800 7350 5700
-Wire Notes Line
-	7350 5700 7250 5600
-Wire Notes Line
-	7250 5600 7250 5650
-Wire Notes Line
-	7250 5650 7100 5650
-Wire Notes Line
-	7350 6150 7200 6150
-Wire Notes Line
-	7200 6150 7200 6100
-Wire Notes Line
-	7200 6100 7100 6200
-Wire Notes Line
-	7100 6200 7200 6300
-Wire Notes Line
-	7200 6300 7200 6250
-Wire Notes Line
-	7200 6250 7350 6250
-Wire Notes Line
-	7350 6250 7350 6150
 Wire Wire Line
 	3650 2700 4550 2700
-Wire Notes Line
-	7500 6650 7500 6850
-Wire Notes Line
-	7500 6850 7450 6850
-Wire Notes Line
-	7450 6850 7550 6950
-Wire Notes Line
-	7550 6950 7650 6850
-Wire Notes Line
-	7650 6850 7600 6850
-Wire Notes Line
-	7600 6850 7600 6650
-Wire Notes Line
-	7600 6650 7500 6650
 Wire Notes Line
 	6850 3900 6850 4200
 Wire Notes Line
@@ -14555,22 +14336,6 @@ Wire Notes Line
 	3800 2350 3750 2300
 Wire Notes Line
 	3800 2350 3850 2300
-Wire Wire Line
-	850  6700 850  6500
-Wire Wire Line
-	850  6500 1050 6500
-Wire Notes Line
-	7050 6650 1000 6650
-Wire Notes Line
-	3950 4500 3950 5350
-Wire Notes Line
-	5500 6950 5500 7100
-Wire Notes Line
-	5500 7100 6500 7100
-Wire Notes Line
-	6500 7100 6500 6950
-Wire Notes Line
-	6500 6950 5500 6950
 Wire Notes Line
 	6100 6850 6050 6850
 Wire Notes Line
@@ -14586,79 +14351,75 @@ Wire Notes Line
 Wire Notes Line
 	6000 6950 6100 6850
 Wire Notes Line
-	5700 6150 5200 6300
+	3750 7350 3250 7500
 Wire Notes Line
-	5200 6300 5200 6500
+	3250 7500 3250 7700
 Wire Notes Line
-	5700 6150 5400 6400
+	3750 7350 3450 7600
 Wire Notes Line
-	5400 6400 5400 6600
+	3450 7600 3450 7800
 Wire Notes Line
-	5700 6100 5700 6300
+	3750 7300 3750 7500
 Wire Notes Line
-	5700 6300 6050 6300
+	3750 7500 4100 7500
 Wire Notes Line
-	6050 6300 6050 6100
+	4100 7500 4100 7300
 Wire Notes Line
-	6050 6100 5700 6100
+	4100 7300 3750 7300
 Wire Notes Line
-	6050 6150 6350 6400
+	4100 7350 4400 7600
 Wire Notes Line
-	6350 6400 6350 6600
+	4400 7600 4400 7800
 Wire Notes Line
-	6050 6150 6550 6300
+	4100 7350 4600 7500
 Wire Notes Line
-	6550 6300 6550 6500
+	4600 7500 4600 7700
 Wire Notes Line
-	5850 6100 5850 5800
+	3900 7300 3900 7000
 Wire Notes Line
-	5850 5800 5500 5650
+	3900 7000 3550 6850
 Wire Notes Line
-	5500 5650 5150 5750
+	3550 6850 3200 6950
 Wire Notes Line
-	5150 5750 5200 5800
+	3200 6950 3250 7000
 Wire Notes Line
-	5200 5800 5150 5900
+	3250 7000 3200 7100
 Wire Notes Line
-	5150 5750 5100 5700
+	3200 6950 3150 6900
 Wire Notes Line
-	5100 5700 5000 5750
+	3150 6900 3050 6950
 Wire Notes Line
-	6050 6150 6300 5950
+	4100 7350 4350 7150
 Wire Notes Line
-	6300 5950 6350 6100
+	4350 7150 4400 7300
 Wire Notes Line
-	5700 6150 5350 5950
+	3750 7350 3400 7150
 Wire Notes Line
-	5350 5950 5250 6050
+	3400 7150 3300 7250
 Wire Notes Line
-	5800 6150 5750 6200
+	3850 7350 3800 7400
 Wire Notes Line
-	5750 6200 5750 6250
+	3800 7400 3800 7450
 Wire Notes Line
-	5850 6250 5850 6200
+	3900 7450 3900 7400
 Wire Notes Line
-	5850 6200 5800 6150
+	3900 7400 3850 7350
 Wire Notes Line
-	5850 6250 5800 6300
+	3900 7450 3850 7500
 Wire Notes Line
-	5800 6300 5750 6250
+	3850 7500 3800 7450
 Wire Notes Line
-	5950 6150 5900 6200
+	4000 7350 3950 7400
 Wire Notes Line
-	5900 6200 5900 6250
+	3950 7400 3950 7450
 Wire Notes Line
-	5900 6250 5950 6300
+	3950 7450 4000 7500
 Wire Notes Line
-	5950 6150 6000 6200
+	4000 7350 4050 7400
 Wire Notes Line
-	6000 6200 6000 6250
+	4050 7400 4050 7450
 Wire Notes Line
-	6000 6250 5950 6300
-Wire Notes Line
-	8200 6950 8250 7000
-Wire Notes Line
-	8100 6950 8050 7000
+	4050 7450 4000 7500
 Wire Notes Line
 	7800 4200 7900 4200
 Wire Notes Line
@@ -14685,18 +14446,10 @@ Wire Notes Line
 	7700 3850 5000 3850
 Text Notes 6600 3850 0    60   ~ 0
 3D / stereo data (depth)
-Text Notes 1300 5550 0    60   ~ 0
+Text Notes 4100 7000 0    60   ~ 0
 current => end stop/calibration,\nvoltage => power, \ndoor state, fluid levels, ...
-$Sheet
-S 1250 4800 1600 800 
-U 5759D6DB
-F0 "Subsystems_states" 50
-F1 "Subsystems_states.sch" 50
-$EndSheet
 Text Notes 4750 5200 0    49   ~ 0
 3D coords..LinuxEMC2\n..GCode\n..step,direction signals 
-Wire Notes Line
-	1000 4450 7050 4450
 Wire Notes Line
 	3700 3750 4100 3750
 Wire Notes Line
@@ -14713,8 +14466,6 @@ Wire Notes Line
 	4800 3850 4250 3850
 Wire Notes Line
 	4250 3850 4250 4250
-Text Notes 7450 6500 0    49   ~ 0
-Functionality:\n- run RobotOperatingSystem nodes\n- run OpenCV (computer vision)\n- process 3D data (GPU)\n- store data\n- run touchpad\n- receive/process/forward commands
 $Bitmap
 Pos 10950 950 
 Scale 1.000000
@@ -16784,7 +16535,7 @@ CA AB 3C 33 7F C0 D1 7A 45 BA BC E4 B1 A6 83 9B 6B BE E1 77 2F 79 F6 B4 E7 F1 4B
 F1 AF A6 B0 BF 9E E3 47 CB 4D 8E 27 D1 BA BB 2B 4F 5E 38 B8 07 5C 83 E7 8F 3D B3 DB 8E 34 17 1E 
 74 8E 7C CB 93 7A A1 BB 0E B3 E4 38 9D 7B A2 73 E4 63 21 B7 42 58 64 38 03 52 A2 3F 84 C3 16 CA 
 3A 13 0E 33 6D AB A1 96 45 E8 99 5F EA 58 2E 32 9B B3 C4 9B CF E0 F2 63 C7 7C 87 AC FF 85 CD C3 
-6F A0 E3 FF 07 95 A3 9D 47 CC C5 D2 41 00 00 00 00 49 45 4E 44 AE 42 60 82 62 
+6F A0 E3 FF 07 95 A3 9D 47 CC C5 D2 41 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
 $Bitmap
@@ -17046,7 +16797,7 @@ CB 2C EC 05 AD AC C6 42 A1 68 42 08 24 59 E0 CF 00 54 62 AE 3D 7D F8 73 CF 48 B1
 AB 70 60 C6 DE F9 BB B7 CB D7 B9 40 89 57 DC 02 30 6E 25 AB 40 28 04 04 B4 F1 64 FF 9E 36 AB E5 
 CC 26 CD EA FE 27 8B B3 94 24 15 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 70 ED F9 FF FC 57 1C D5 C3 ED 82 38 00 00 00 00 
-49 45 4E 44 AE 42 60 82 D1 
+49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
 $Bitmap
@@ -17304,11 +17055,13 @@ AA 15 BB BB 8A D5 06 55 95 10 4F A7 3B BB 23 03 F8 2F CC 40 7E 4D A1 52 DC A2 6D
 39 8C B5 E0 8D E5 7E 2F C0 4C 79 03 3E AF BD AA A2 AA 8E 21 2E 44 60 48 F1 64 8C B6 1E 73 96 E2 
 55 8D F3 75 A5 51 55 45 96 0B D1 78 26 A3 18 B3 4B 18 1A 4F 9F 2A 84 AA 4E 48 21 15 55 F0 C7 31 
 F6 51 AB 71 E8 3A 57 1D 50 D5 45 16 18 BB AB C9 98 73 AE 8E 60 A6 C4 07 2B B5 46 57 10 FF 1F 84 
-B5 E1 8B C6 1F A9 67 00 00 00 00 49 45 4E 44 AE 42 60 82 11 
+B5 E1 8B C6 1F A9 67 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 1950 7650 0    49   ~ 0
-world\ndevelop\nment
-Text Notes 650  7300 0    60   ~ 12
-A collaboration of:
+$Sheet
+S 5350 7150 800  650 
+U 5A000DCA
+F0 "network" 49
+F1 "network.sch" 49
+$EndSheet
 $EndSCHEMATC
